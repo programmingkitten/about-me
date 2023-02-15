@@ -8,7 +8,7 @@ export default function GameList(props) {
     const gameItems = Object.values(gamesObj).map(
         (game) => {
         console.log(game)
-        return <div>
+        return <div key={game.name}>
             <h1>{game.name}</h1>
             <h2>{game.rating}</h2>
         </div>
