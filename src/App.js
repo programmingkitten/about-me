@@ -4,6 +4,7 @@ import Footer from './footer';
 import { Greeting } from './calc';
 import GameList from './components/games';
 import { Timer } from './components/timer';
+import Clicker from './components/clicker';
 const data = {
   'game1': {'name': "Minecraft", 'rating': "10/10"},
   'game2': {'name': "League of legends", 'rating': "10/10"},
@@ -21,6 +22,7 @@ function App() {
       <Greeting text="ok"/>
       <GameList games={data}></GameList>
       <Timer></Timer>
+      <Clicker></Clicker>
     </div>
   );
 }
