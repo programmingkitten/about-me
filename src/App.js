@@ -5,6 +5,7 @@ import { Greeting } from './calc';
 import GameList from './components/games';
 import { Timer } from './components/timer';
 import Clicker from './components/clicker';
+import Characters from './components/characters';
 const data = {
   'game1': {'name': "Minecraft", 'rating': "10/10"},
   'game2': {'name': "League of legends", 'rating': "10/10"},
@@ -23,6 +24,7 @@ function App() {
       <GameList games={data}></GameList>
       <Timer></Timer>
       <Clicker></Clicker>
+      <Characters/>
     </div>
   );
 }
