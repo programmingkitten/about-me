@@ -2,11 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './footer';
 import { Greeting } from './calc';
-import GameList from './components/games';
 import { Timer } from './components/timer';
 import Clicker from './components/clicker';
 import Characters from './components/characters';
 import Register from './components/register';
+import AddGame from './components/addGame';
+import GamesList from './components/gamesList';
 const data = {
   'game1': {'name': "Minecraft", 'rating': "10/10"},
   'game2': {'name': "League of legends", 'rating': "10/10"},
@@ -26,6 +27,8 @@ function App() {
       <Clicker></Clicker>
       <Characters/>
       <Footer />
+      <AddGame/>
+      <GamesList></GamesList>
 
     </div>
   );
