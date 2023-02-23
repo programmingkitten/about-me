@@ -6,6 +6,7 @@ import GameList from './components/games';
 import { Timer } from './components/timer';
 import Clicker from './components/clicker';
 import Characters from './components/characters';
+import Register from './components/register';
 const data = {
   'game1': {'name': "Minecraft", 'rating': "10/10"},
   'game2': {'name': "League of legends", 'rating': "10/10"},
@@ -19,12 +20,15 @@ function App() {
   return (
     <div className="App">
       <h1> hello </h1>
-      <Footer />
+      <Register></Register>
+
       <Greeting text="ok"/>
       <GameList games={data}></GameList>
       <Timer></Timer>
       <Clicker></Clicker>
       <Characters/>
+      <Footer />
+
     </div>
   );
 }
