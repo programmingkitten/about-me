@@ -23,7 +23,6 @@ function App() {
       <Register></Register>
 
       <Greeting text="ok"/>
-      <GameList games={data}></GameList>
       <Timer></Timer>
       <Clicker></Clicker>
       <Characters/>
