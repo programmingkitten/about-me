@@ -5,7 +5,9 @@ export default function Register(props) {
 
 
     const onChangeHandler = (e) => {
-        console.log(formData.username)
+        setData(prev => (
+            {...prev, 
+                [e.target.name]: e.target.value}))
     }
 
     const clickHandler = (e) => {
@@ -14,9 +16,9 @@ export default function Register(props) {
 
     return (<div>
                 <label>Username</label>
-                <input value={formData.username} onChange={(e) => setData(prev => ({...prev, username: e.target.value}))}></input> 
+                <input name="username" value={formData.username} onChange={(e) => onChangeHandler(e)}></input> 
                 <label>Password</label>
-                <input value={formData.password} onChange={(e) => setData(prev => ({...prev, password: e.target.value}))}></input> 
+                <input name="password" value={formData.password} onChange={(e) => onChangeHandler(e)}></input> 
                 <button onClick={clickHandler}>info</button>
             </div>)
 

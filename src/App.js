@@ -23,7 +23,6 @@ function App() {
       <Register></Register>
 
       <Greeting text="ok"/>
-      <Timer></Timer>
       <Clicker></Clicker>
       <Characters/>
       <Footer />
